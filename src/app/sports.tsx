@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react"; // Import useEffect for side effects
 import Image from "next/image";
 import resume from "../../public/Maskgroup.png";
 import sport1 from "../../public/sports1.jpeg";
@@ -11,6 +12,27 @@ import sport3 from "../../public/sport3.jpg";
 
 export default function Sports() {
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    console.log("Current Theme:", theme);
+    const storedTheme = localStorage.getItem("theme");
+    console.log("Stored Theme:", storedTheme);
+    if (storedTheme && storedTheme === "dark") {
+      // if (storedTheme === "dark") {
+      setTheme("theme");
+      // } else {
+      //   setTheme("dark");
+      // }
+    }
+  }, []); // Run this effect only once on initial render
+
+  const handleThemeChange = (newTheme: string) => {
+    console.log("New Theme:", newTheme);
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+};
+
+
   const cardClass =
     theme === "dark"
       ? "max-w-full bg-white rounded-lg shadow dark:bg-gray-800  ml-3"
@@ -27,13 +49,16 @@ export default function Sports() {
       <div style={{ float: "right", marginRight: "33px" }}>
         {theme === "dark" ? (
           <BsSun
-            // style={{ marginLeft: "-2px" }}
             size={25}
-            onClick={() => setTheme("light")}
+            onClick={() => handleThemeChange("light")}
             cursor="pointer"
           />
         ) : (
-          <FiMoon size={25} onClick={() => setTheme("dark")} cursor="pointer" />
+          <FiMoon
+            size={25}
+            onClick={() => handleThemeChange("dark")}
+            cursor="pointer"
+          />
         )}
       </div>
       <h1
