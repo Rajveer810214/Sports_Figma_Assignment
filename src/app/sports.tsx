@@ -64,7 +64,7 @@ export default function Sports() {
       <h1
         className="ml-22 bold-text"
         style={{
-          marginLeft: "7%",
+          marginLeft: "12px",
           marginTop: "70px",
           fontSize: "20px",
           borderBottom: "2px solid #738FFF",
