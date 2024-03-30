@@ -79,7 +79,7 @@ export default function Sports({ theme }: { theme: any }) {
           ></div>
           <div
             className={ticketLeft}
-            style={{ bottom: "-102.5%", left: "20.7%" }}
+            style={{ bottom: "-120.5%", left: "17.7%" }}
           ></div>
           <div className="flex flex-col justify-center">
             <Image
