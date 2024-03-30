@@ -30,8 +30,7 @@ export default function Sports() {
     console.log("New Theme:", newTheme);
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
-};
-
+  };
 
   const cardClass =
     theme === "dark"
@@ -64,7 +63,7 @@ export default function Sports() {
       <h1
         className="ml-22 bold-text"
         style={{
-          marginLeft: "12px",
+          marginLeft: "15px",
           marginTop: "70px",
           fontSize: "20px",
           borderBottom: "2px solid #738FFF",
