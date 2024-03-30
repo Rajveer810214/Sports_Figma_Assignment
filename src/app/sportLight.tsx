@@ -44,14 +44,14 @@ export default function Sports({ theme }: { theme: any }) {
         {/* </div> */}
       </div>
       <div
-        className="flex items-center justify-center mt-4  "
-        // style={{ width: "80%", margin: "auto" }}
+        className="flex items-center justify-center mt-4 "
+        style={{ justifyContent: "space-evenly" }}
       >
         {/* Left Arrow */}
         <svg
           style={{
-            position: "absolute",
-            left: "190px",
+            // position: "absolute",
+            // marginLeft: "190px",
             color: "blue",
             border: "2px solid #738FFF            ",
           }}
@@ -61,7 +61,7 @@ export default function Sports({ theme }: { theme: any }) {
           strokeWidth={2.2}
           stroke="#738FFF
           "
-          className="w-8 h-10 cursor-pointer ml-2"
+          className="w-8 h-10 cursor-pointer"
         >
           <path
             strokeLinecap="round"
@@ -71,141 +71,152 @@ export default function Sports({ theme }: { theme: any }) {
         </svg>
 
         {/* First Card */}
-        <div className={cardClass} style={{ width: "257px", height: "563px" }}>
-          {/* Ticket cuts */}
+        <div className="flex items-center justify-center mt-4">
           <div
-            className={ticketLeft}
-            style={{ bottom: "-98.8%", left: "38.9%" }}
-          ></div>
-          <div
-            className={ticketLeft}
-            style={{ bottom: "-120.5%", left: "17.7%" }}
-          ></div>
-          <div className="flex flex-col justify-center">
-            <Image
-              className="mx-auto mt-3"
-              src={s1}
-              alt=""
-              width={290.1}
-              height={374.31}
-              style={{
-                width: "236.1px",
-                height: "374.31px",
-                top: "-253.08px",
-                left: "-1809px",
-              }}
-            />
-            <p className="text-center mt-1" style={{ color: "gray" }}>
-              - - - - - - - - - - - - - - - -
-            </p>
-            <p className={PlayerName}>Sacramento River Cats</p>
-            <p className="text-center" style={{ color: "gray" }}>
-              Oct 15 | Sun | 4:30 PM
-            </p>
-            <p className="text-center mt-1" style={{ fontSize: "15px" }}>
-              Las Vegas Ballpark, Las Vegas, Nevada
-            </p>
-            <p style={{ width: "80%" }} className={collection}>
-              Orange Collection
-            </p>
+            className={cardClass}
+            style={{ width: "257px", height: "563px" }}
+          >
+            {/* Ticket cuts */}
+            <div
+              className={ticketLeft}
+              style={{ marginTop: "402px", marginLeft: "248px" }}
+            ></div>
+            <div
+              className={ticketLeft}
+              style={{ marginTop: "402px", marginLeft: "-8px" }}
+            ></div>
+            <div className="flex flex-col justify-center">
+              <Image
+                className="mx-auto mt-3"
+                src={s1}
+                alt=""
+                width={290.1}
+                height={374.31}
+                style={{
+                  width: "236.1px",
+                  height: "374.31px",
+                  top: "-253.08px",
+                  left: "-1809px",
+                }}
+              />
+              <p className="text-center mt-1" style={{ color: "gray" }}>
+                - - - - - - - - - - - - - - - -
+              </p>
+              <p className={PlayerName}>Sacramento River Cats</p>
+              <p className="text-center" style={{ color: "gray" }}>
+                Oct 15 | Sun | 4:30 PM
+              </p>
+              <p className="text-center mt-1" style={{ fontSize: "15px" }}>
+                Las Vegas Ballpark, Las Vegas, Nevada
+              </p>
+              <p style={{ width: "80%" }} className={collection}>
+                Orange Collection
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* Second Card */}
-        <div className={cardClass} style={{ width: "257px", height: "563px" }}>
-          {/* Ticket cuts */}
+          {/* Second Card */}
           <div
-            className={ticketLeft}
-            style={{ bottom: "-102.5%", left: "41.7%" }}
-          ></div>
-          <div
-            className={ticketLeft}
-            style={{ bottom: "-102.5%", left: "59.8%" }}
-          ></div>
-          <div className="flex flex-col justify-center">
-            <Image
-              className="mx-auto mt-3"
-              src={s2}
-              alt=""
-              width={290.1}
-              height={374.31}
-              style={{
-                width: "236.1px",
-                height: "374.31px",
-                top: "-253.08px",
-                left: "-1809px",
-              }}
-            />
-            <p className="text-center mt-1" style={{ color: "gray" }}>
-              - - - - - - - - - - - - - - - -
-            </p>
-            <p className={PlayerName}>Sacramento River Cats</p>
+            className={cardClass}
+            style={{ width: "257px", height: "563px" }}
+          >
+            {/* Ticket cuts */}
+            <div
+              className={ticketLeft}
+              style={{ marginTop: "402px", marginLeft: "248px" }}
+            ></div>
+            <div
+              className={ticketLeft}
+              style={{ marginTop: "402px", marginLeft: "-8px" }}
+            ></div>
+            <div className="flex flex-col justify-center">
+              <Image
+                className="mx-auto mt-3"
+                src={s2}
+                alt=""
+                width={290.1}
+                height={374.31}
+                style={{
+                  width: "236.1px",
+                  height: "374.31px",
+                  top: "-253.08px",
+                  left: "-1809px",
+                }}
+              />
+              <p className="text-center mt-1" style={{ color: "gray" }}>
+                - - - - - - - - - - - - - - - -
+              </p>
+              <p className={PlayerName}>Sacramento River Cats</p>
 
-            <p className="text-center" style={{ color: "gray" }}>
-              Oct 15 | Sun | 4:30 PM
-            </p>
-            <p className="text-center mt-1" style={{ fontSize: "15px" }}>
-              Las Vegas Ballpark, Las Vegas, Nevada
-            </p>
-            <p style={{ width: "80%" }} className={collection}>
-              Orange Collection
-            </p>
+              <p className="text-center" style={{ color: "gray" }}>
+                Oct 15 | Sun | 4:30 PM
+              </p>
+              <p className="text-center mt-1" style={{ fontSize: "15px" }}>
+                Las Vegas Ballpark, Las Vegas, Nevada
+              </p>
+              <p style={{ width: "80%" }} className={collection}>
+                Orange Collection
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* Third Card */}
-        <div className={cardClass} style={{ width: "257px", height: "563px" }}>
-          {/* Ticket cuts */}
+          {/* Third Card */}
           <div
-            className={ticketLeft}
-            style={{ bottom: "-102.5%", left: "62.58%" }}
-          ></div>
-          <div
-            className={ticketLeft}
-            style={{ bottom: "-102.5%", left: "80.75%" }}
-          ></div>
-          <div className="flex flex-col justify-center">
-            <Image
-              className="mx-auto mt-3"
-              src={s1}
-              alt=""
-              width={290.1}
-              height={374.31}
-              style={{
-                width: "236.1px",
-                height: "374.31px",
-                top: "-253.08px",
-                left: "-1809px",
-              }}
-            />
-            <p
-              className="text-center mt-1"
-              style={{
-                color: "gray",
-                borderStyle: "2dashed groove none dotted",
-              }}
-            >
-              - - - - - - - - - - - - - - - -
-            </p>
-            <p className={PlayerName}>Sacramento River Cats</p>
+            className={cardClass}
+            style={{ width: "257px", height: "563px" }}
+          >
+            {/* Ticket cuts */}
+            <div
+              className={ticketLeft}
+              style={{ marginTop: "402px", marginLeft: "248px" }}
+            ></div>
+            <div
+              className={ticketLeft}
+              style={{ marginTop: "402px", marginLeft: "-8px" }}
+            ></div>
+            <div className="flex flex-col justify-center">
+              <Image
+                className="mx-auto mt-3"
+                src={s1}
+                alt=""
+                width={290.1}
+                height={374.31}
+                style={{
+                  width: "236.1px",
+                  height: "374.31px",
+                  top: "-253.08px",
+                  left: "-1809px",
+                }}
+              />
+              <p
+                className="text-center mt-1"
+                style={{
+                  color: "gray",
+                  borderStyle: "2dashed groove none dotted",
+                }}
+              >
+                - - - - - - - - - - - - - - - -
+              </p>
+              <p className={PlayerName}>Sacramento River Cats</p>
 
-            <p className="text-center" style={{ color: "gray" }}>
-              Oct 15 | Sun | 4:30 PM
-            </p>
-            <p className="text-center mt-1" style={{ fontSize: "15px" }}>
-              Las Vegas Ballpark, Las Vegas, Nevada
-            </p>
-            <p style={{ width: "80%" }} className={collection}>
-              Orange Collection
-            </p>
+              <p className="text-center" style={{ color: "gray" }}>
+                Oct 15 | Sun | 4:30 PM
+              </p>
+              <p className="text-center mt-1" style={{ fontSize: "15px" }}>
+                Las Vegas Ballpark, Las Vegas, Nevada
+              </p>
+              <p style={{ width: "80%" }} className={collection}>
+                Orange Collection
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Right Arrow */}
         <svg
           style={{
-            position: "absolute",
-            right: "190px",
+            // position: "absolute",
+            // right: "190px",
             color: "blue",
             border: "2px solid #738FFF",
           }}
